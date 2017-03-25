@@ -109,7 +109,7 @@ public class HBasePager
 	/**
 	 * 获取hbase表中 指定页 的记录 <p>
 	 * 本函数使用PageFilter，每次执行hTable.getScanner()只会取出pageSize+1条记录（相当于一页记录）。
-   * 所以需要一页一页的将记录取出，直到取到指定页的记录，然后返回该页的记录。
+    	 * 所以需要一页一页的将记录取出，直到取到指定页的记录，然后返回该页的记录。
 	 * @param tableName 表空间+":"+表名
 	 * @param pageNum 指定页数
 	 * @param pageSize 每页大小
